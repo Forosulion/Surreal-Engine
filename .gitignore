@@ -32,7 +32,7 @@
 *.app
 
 #Debug
-SurrealEngine/x64/**
+SurrealEngine/x64/Debug/
 
 
 
