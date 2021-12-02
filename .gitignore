@@ -31,5 +31,10 @@
 *.out
 *.app
 
+#Debug
+SurrealEngine/x64/**
+
+
+
 #vs db
 *.VC.db
