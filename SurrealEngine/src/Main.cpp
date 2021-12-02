@@ -1,7 +1,11 @@
+#pragma once
+
 #include <glad/glad.h> 
 #include <GLFW/glfw3.h>
 #include <glm/glm.hpp>
 #include <iostream>
+
+#include "Camera.h"
 
 //E
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
@@ -19,7 +23,7 @@ int main(){
 			glfwTerminate();
 			exit(-1);
 		}
-
+		Camera cam;
 		glfwMakeContextCurrent(window);
 		glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 
