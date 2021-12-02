@@ -34,7 +34,12 @@
 #Debug
 SurrealEngine/x64/Debug/
 
+#Release
+SurrealEngine/x64/Release/
 
 
 #vs db
 *.VC.db
+/Dependencies/include
+/Dependencies/Lib
+/.vs
