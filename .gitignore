@@ -44,3 +44,5 @@ SurrealEngine/Debug
 /.vs
 /Math/x64/Debug
 /SurrealEngine/Debug
+/Release
+/Debug
