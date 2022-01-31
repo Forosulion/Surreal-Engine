@@ -34,10 +34,11 @@
 #Debug
 /x64
 SurrealEngine/x64/Debug/
-
+Math/x64/Release/
 
 #Release
 SurrealEngine/x64/Release/
+Math/x64/Release/
 
 
 #vs db
