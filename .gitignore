@@ -31,15 +31,11 @@
 *.out
 *.app
 
-#Debug
+#Folders
 /x64
-SurrealEngine/x64/Debug/
-Math/x64/Release/
-
-#Release
-SurrealEngine/x64/Release/
-Math/x64/Release/
-
+SurrealEngine/x64
+Math/x64
+SurrealEngine/Debug
 
 #vs db
 *.VC.db
