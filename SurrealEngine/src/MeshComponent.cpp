@@ -5,5 +5,4 @@
 
 MeshComponent::MeshComponent()
 {
-
 }
