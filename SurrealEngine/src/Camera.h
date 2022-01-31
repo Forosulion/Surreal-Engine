@@ -17,7 +17,7 @@ private:
 
 	void _updateViewMatrix();
 	glm::quat _getRotationQuat();
-
+	//change
 private:
 	float m_pitch, m_yaw, m_oldMouseX, m_oldMouseY,
 		m_fieldOfView, m_aspectRatio, m_near, m_far;
