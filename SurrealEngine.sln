@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SurrealEngine", "SurrealEngine\SurrealEngine.vcxproj", "{566C3EA2-2FEB-4957-BF55-9E792FCEB919}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Math", "Math\Math.vcxproj", "{5095A850-0EE1-44BA-9056-078755219796}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{566C3EA2-2FEB-4957-BF55-9E792FCEB919}.Release|x64.Build.0 = Release|x64
 		{566C3EA2-2FEB-4957-BF55-9E792FCEB919}.Release|x86.ActiveCfg = Release|Win32
 		{566C3EA2-2FEB-4957-BF55-9E792FCEB919}.Release|x86.Build.0 = Release|Win32
+		{5095A850-0EE1-44BA-9056-078755219796}.Debug|x64.ActiveCfg = Debug|x64
+		{5095A850-0EE1-44BA-9056-078755219796}.Debug|x64.Build.0 = Debug|x64
+		{5095A850-0EE1-44BA-9056-078755219796}.Debug|x86.ActiveCfg = Debug|Win32
+		{5095A850-0EE1-44BA-9056-078755219796}.Debug|x86.Build.0 = Debug|Win32
+		{5095A850-0EE1-44BA-9056-078755219796}.Release|x64.ActiveCfg = Release|x64
+		{5095A850-0EE1-44BA-9056-078755219796}.Release|x64.Build.0 = Release|x64
+		{5095A850-0EE1-44BA-9056-078755219796}.Release|x86.ActiveCfg = Release|Win32
+		{5095A850-0EE1-44BA-9056-078755219796}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
