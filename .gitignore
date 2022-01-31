@@ -46,3 +46,5 @@ Math/x64/Release/
 /Dependencies/include
 /Dependencies/Lib
 /.vs
+/Math/x64/Debug
+/SurrealEngine/Debug
