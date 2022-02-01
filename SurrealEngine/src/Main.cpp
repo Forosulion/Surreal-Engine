@@ -19,6 +19,7 @@
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow* window);
 
+
 int main(){
 		glfwInit();
 		glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
@@ -294,7 +295,7 @@ int main(){
 
 
         float pitch = 0, yaw = 0;
-        Camera cam1(glm::vec3(camPosX, 0.0F, camPosZ), glm::vec3(0.0f, 1.0f, 0.0f), 0.0F, 0.0F);
+        engine_name_placeholder::Camera cam1(glm::vec3(camPosX, 0.0F, camPosZ), glm::vec3(0.0f, 1.0f, 0.0f), 0.0F, 0.0F);
         int viewLoc = glGetUniformLocation(shaderProgram, "view");
         glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(cam1.getViewMatrix()));
         glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);

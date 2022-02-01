@@ -1,25 +1,27 @@
 #pragma once
 #include <vector>
 
-struct Vertex
-{
-	//Vertex fields
-};
+
+
+namespace engine_name_placeholder {
+
+	struct Vertex
+	{
+		//Vertex fields
+	};
 
 
 
-class MeshComponent
-{
+	class MeshComponent
+	{
+
+	private:
+		MeshComponent();
+		std::vector<Vertex> verticies;
+		std::vector<unsigned int> indicies;
 
 
+	};
+}
 
-
-
-private:
-	MeshComponent();
-	std::vector<Vertex> verticies;
-	std::vector<unsigned int> indicies;
-
-
-};
 
