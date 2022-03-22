@@ -4,6 +4,7 @@
 #include <glm/gtc/quaternion.hpp>
 #include <glm/gtx/quaternion.hpp>
 #include "Math.h"
+#include "MathLib.h"
 
 namespace engine_name_placeholder {
 
@@ -29,6 +30,10 @@ namespace engine_name_placeholder {
 		glm::mat4 m_viewMatrix = {}, 
 			m_perspectiveMatrix = {};
 	};
+
+
+
+
 }
 
 

@@ -11,6 +11,7 @@
 #include <glm/gtx/quaternion.hpp>
 #include <iostream>
 #include "Camera.h"
+#include "MathLib.h"
 
 #define STB_IMAGE_IMPLEMENTATION
 #include <stb_image.h>
@@ -21,6 +22,12 @@ void processInput(GLFWwindow* window);
 
 
 int main(){
+    engine_name_placeholder::Math::fvec2 fvec1(0.0f, 0.1f), fvec2(0.6f, 0.8f);
+    engine_name_placeholder::Math::fvec2 fvec3(fvec1 + fvec2);
+    glm::fvec3 v(0.1f);
+    fvec3 *= 3.0;
+    std::cout << fvec3.r << " " << fvec3.y << std::endl;
+
 		glfwInit();
 		glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
 		glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
