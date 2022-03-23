@@ -12,6 +12,7 @@
 #include <iostream>
 #include "Camera.h"
 #include "MathLib.h"
+#include "Types.h"
 
 #define STB_IMAGE_IMPLEMENTATION
 #include <stb_image.h>
@@ -22,8 +23,8 @@ void processInput(GLFWwindow* window);
 
 
 int main(){
-    engine_name_placeholder::Math::fvec2 fvec1(0.0f, 0.1f), fvec2(0.6f, 0.8f);
-    engine_name_placeholder::Math::fvec2 fvec3(fvec1 + fvec2);
+    engine_name_placeholder::vec2f fvec1(0.0f, 0.1f), fvec2(0.6f, 0.8f);
+    engine_name_placeholder::vec2f fvec3(fvec1 + fvec2);
     glm::fvec3 v(0.1f);
     fvec3 *= 3.0;
     std::cout << fvec3.r << " " << fvec3.y << std::endl;
@@ -295,7 +296,7 @@ int main(){
         float camPosZ = 3;
         float oldCamPosY;
         float oldCamPosZ;
-        glm::vec3 camPos = glm::vec3(0.0f, 0.0f, 3.0f);
+        glm::vec3 camPos(0.0f, 0.0f, 3.0f);
         glm::vec3 camDirection = glm::vec3(-1.0f, 0.0f, -3.0f);
         float angle = 0;
         float transP = 0;
