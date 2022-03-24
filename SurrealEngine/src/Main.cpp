@@ -23,11 +23,10 @@ void processInput(GLFWwindow* window);
 
 
 int main(){
-    engine_name_placeholder::vec2f fvec1(0.0f, 0.1f), fvec2(0.6f, 0.8f);
-    engine_name_placeholder::vec2f fvec3(fvec1 + fvec2);
-    glm::fvec3 v(0.1f);
-    fvec3 *= 3.0;
-    std::cout << fvec3.r << " " << fvec3.y << std::endl;
+    engine_name_placeholder::vec1f fvec1(0.0f);
+    engine_name_placeholder::vec2f fvec3(fvec1, 3.1f), fvec2(6.9f);
+    engine_name_placeholder::vec2f fvec4 = fvec3 + fvec2;
+    std::cout << fvec3[1] << std::endl;
 
 		glfwInit();
 		glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
