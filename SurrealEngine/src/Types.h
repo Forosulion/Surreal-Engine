@@ -292,6 +292,16 @@ namespace engine_name_placeholder
 			return *this = vec2<T>(x | c, y | c);
 		};
 
+		///////////////////////// operator~ /////////////////////////////
+
+
+		template<typename U>
+		vec2<T> operator~()
+		{
+			return vec2<T>(~x, ~y);
+		}
+
+
 		///////////////////////// misc operators /////////////////////////////
 		vec2<T>& operator++()
 		{
