@@ -13,6 +13,320 @@ namespace engine_name_placeholder
 		vec1() {};
 		vec1(const vec1<T>& rhs) { x = rhs.x; };
 		vec1(T x) : x(x) {};
+#pragma region methods
+
+		size_t length() { return 1; };
+
+
+		///////////////////////// operator+ /////////////////////////////
+
+		template<typename U>
+		vec1<T> operator+(U c)
+		{
+			return vec1<T>(x + c);
+		}
+
+		vec1<T> operator+(const vec1<T>& rhs)
+		{
+			return vec1<T>(x + rhs.x);
+		};
+
+		vec1<T>& operator+=(const vec1<T>& rhs)
+		{
+			return *this = vec1<T>(x + rhs.x);
+		};
+
+		template <typename U>
+		vec1<T>& operator+=(U c)
+		{
+			return *this = vec1<T>(x + c);
+		};
+
+
+		///////////////////////// operator- /////////////////////////////
+
+
+		template<typename U>
+		vec1<T> operator-(U c)
+		{
+			return vec1<T>(x - c);
+		}
+
+		vec1<T> operator-(const vec1<T>& rhs)
+		{
+			return vec1<T>(x - rhs.x);
+		};
+
+		vec1<T>& operator-=(const vec1<T>& rhs)
+		{
+			return *this = vec1<T>(x - rhs.x);
+		};
+
+		template <typename U>
+		vec1<T>& operator-=(U c)
+		{
+			return *this = vec1<T>(x - c);
+		};
+
+
+
+		///////////////////////// operator* /////////////////////////////
+
+
+		template<typename U>
+		vec1<T> operator*(U c)
+		{
+			return vec1<T>(x * c);
+		}
+
+		vec1<T> operator*(const vec1<T>& rhs)
+		{
+			return vec1<T>(x * rhs.x);
+		};
+
+		vec1<T>& operator*=(const vec1<T>& rhs)
+		{
+			return *this = vec1<T>(x * rhs.x);
+		};
+
+		template <typename U>
+		vec1<T>& operator*=(U c)
+		{
+			return *this = vec1<T>(x * c);
+		};
+
+
+
+
+		///////////////////////// operator/ /////////////////////////////
+
+
+		template<typename U>
+		vec1<T> operator/(U c)
+		{
+			return vec1<T>(x / c);
+		}
+
+		vec1<T> operator/(const vec1<T>& rhs)
+		{
+			return vec1<T>(x / rhs.x);
+		};
+
+		vec1<T>& operator/=(const vec1<T>& rhs)
+		{
+			return *this = vec1<T>(x / rhs.x);
+		};
+
+		template <typename U>
+		vec1<T>& operator/=(U c)
+		{
+			return *this = vec1<T>(x / c);
+		};
+
+
+		///////////////////////// operator& /////////////////////////////
+
+
+		template<typename U>
+		vec1<T> operator&(U c)
+		{
+			return vec1<T>(x & c);
+		}
+
+		vec1<T> operator&(const vec1<T>& rhs)
+		{
+			return vec1<T>(x & rhs.x);
+		};
+
+		vec1<T>& operator&=(const vec1<T>& rhs)
+		{
+			return *this = vec1<T>(x & rhs.x);
+		};
+
+		template <typename U>
+		vec1<T>& operator&=(U c)
+		{
+			return *this = vec1<T>(x & c);
+		};
+
+		///////////////////////// operator% /////////////////////////////
+
+
+		template<typename U>
+		vec1<T> operator%(U c)
+		{
+			return vec1<T>(x % c);
+		}
+
+		vec1<T> operator%(const vec1<T>& rhs)
+		{
+			return vec1<T>(x % rhs.x);
+		};
+
+		vec1<T>& operator%=(const vec1<T>& rhs)
+		{
+			return *this = vec1<T>(x % rhs.x);
+		};
+
+		template <typename U>
+		vec1<T>& operator%=(U c)
+		{
+			return *this = vec1<T>(x % c);
+		};
+
+
+		///////////////////////// operator<< /////////////////////////////
+
+
+		template<typename U>
+		vec1<T> operator<<(U c)
+		{
+			return vec1<T>(x << c);
+		}
+
+		vec1<T> operator<<(const vec1<T>& rhs)
+		{
+			return vec1<T>(x << rhs.x);
+		};
+
+		vec1<T>& operator<<=(const vec1<T>& rhs)
+		{
+			return *this = vec1<T>(x << rhs.x);
+		};
+
+		template <typename U>
+		vec1<T>& operator<<=(U c)
+		{
+			return *this = vec1<T>(x << c);
+		};
+
+		///////////////////////// operator>> /////////////////////////////
+
+
+		template<typename U>
+		vec1<T> operator>>(U c)
+		{
+			return vec1<T>(x >> c);
+		}
+
+		vec1<T> operator>>(const vec1<T>& rhs)
+		{
+			return vec1<T>(x >> rhs.x);
+		};
+
+		vec1<T>& operator>>=(const vec1<T>& rhs)
+		{
+			return *this = vec1<T>(x >> rhs.x);
+		};
+
+		template <typename U>
+		vec1<T>& operator>>=(U c)
+		{
+			return *this = vec1<T>(x >> c);
+		};
+
+		///////////////////////// operator^ /////////////////////////////
+
+
+		template<typename U>
+		vec1<T> operator^(U c)
+		{
+			return vec1<T>(x ^ c);
+		}
+
+		vec1<T> operator^(const vec1<T>& rhs)
+		{
+			return vec1<T>(x ^ rhs.x);
+		};
+
+		vec1<T>& operator^=(const vec1<T>& rhs)
+		{
+			return *this = vec1<T>(x ^ rhs.x);
+		};
+
+		template <typename U>
+		vec1<T>& operator^=(U c)
+		{
+			return *this = vec1<T>(x ^ c);
+		};
+
+		///////////////////////// operator| /////////////////////////////
+
+
+		template<typename U>
+		vec1<T> operator|(U c)
+		{
+			return vec1<T>(x | c);
+		}
+
+		vec1<T> operator|(const vec1<T>& rhs)
+		{
+			return vec1<T>(x | rhs.x);
+		};
+
+		vec1<T>& operator|=(const vec1<T>& rhs)
+		{
+			return *this = vec1<T>(x | rhs.x);
+		};
+
+		template <typename U>
+		vec1<T>& operator|=(U c)
+		{
+			return *this = vec1<T>(x | c);
+		};
+
+		///////////////////////// operator~ /////////////////////////////
+
+
+		template<typename U>
+		vec1<T> operator~()
+		{
+			return vec1<T>(~x);
+		}
+
+
+		///////////////////////// misc operators /////////////////////////////
+		vec1<T>& operator++()
+		{
+			++this->x;
+			return *this;
+		}
+
+		vec1<T>& operator--()
+		{
+			--this->x;
+			return *this;
+		}
+
+		T& operator[](size_t i)
+		{
+			if (i >= this->length())
+			{
+				std::cout << "ERROR: Vector subscript out of range!\n";
+				assert(0);
+			}
+			return  (&this->x)[i];
+
+		}
+
+		vec1<T>& operator=(const vec1<T>& rhs)
+		{
+			this->x = rhs.x;
+			return *this;
+		}
+
+
+		bool operator==(const vec1<T>& rhs)
+		{
+			return (this->x == rhs.x );
+		}
+
+
+		bool operator!=(const vec1<T>& rhs)
+		{
+			return (this->x != rhs.x);
+		}
+#pragma endregion
 	};
 
 
@@ -31,6 +345,7 @@ namespace engine_name_placeholder
 		vec2(T X, T Y) : x(X) , y(Y) {};
 		vec2(T x) : x(x), y(x) {};
 	public:
+#pragma region methods
 
 		size_t length() { return 2; };
 
@@ -123,7 +438,7 @@ namespace engine_name_placeholder
 		{
 			return vec2<T>(x / c, y / c);
 		}
-		
+
 		vec2<T> operator/(const vec2<T>& rhs)
 		{
 			return vec2<T>(x / rhs.x, y / rhs.y);
@@ -346,7 +661,7 @@ namespace engine_name_placeholder
 		{
 			return (this->x != rhs.x || this->y != rhs.y);
 		}
-
+#pragma endregion
 	};
 
 

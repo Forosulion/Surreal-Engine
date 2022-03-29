@@ -124,7 +124,6 @@ int main(){
 
 
 
-
         /* Create a windowed mode window and its OpenGL context */
 
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
@@ -318,7 +317,7 @@ int main(){
 
             cam1.onUpdate(window);
             int viewLoc = glGetUniformLocation(shaderProgram, "view");
-            glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(cam1.getViewMatrix()));
+            //glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(cam1.getViewMatrix()));
 
             glDrawArrays(GL_TRIANGLES, 0, 36);
             /* Swap front and back buffers */
